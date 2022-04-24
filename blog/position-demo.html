@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Relative, Absolute and Fixed</title>
+    <style>
+      .title {
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
+      .relative-block {
+        position: relative;
+        left: 20px;
+        top: 20px;
+        background-color: brown;
+        display: inline-block;
+      }
+      .static-block {
+        background-color: cornflowerblue;
+        display: inline-block;
+      }
+      .absolute-block {
+        background-color: brown;
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+      }
+      .parent {
+        position: absolute;
+      }
+      .fixed-block {
+        background-color: brown;
+        display: inline-block;
+        position: fixed;
+        top: 450px;
+      }
+      .body {
+        margin-bottom: 80px;
+      }
+      .explanation {
+        margin-top: 70px;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main-title {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      
+    </style>
+  </head>
+  <body style="margin-bottom: 800px;">
+  <h1 class="main-title">Relative, Absolute and fixed Position</h1>
+  <h1 class="title">Relative Position</h1> 
+    <div class="parent">
+      <div class="static-block">Block 1</div>
+      <div class="relative-block">RELATIVE</div>
+      <div class="static-block">Block 3</div>
+      <div class="static-block">Block 4</div>
+    </div>
+  <p class="explanation">When using relative position the element holds it's original static position and is moved based on that. This allows for the other elements to retain the position in the layout. It also allows for the use of z-index so elements can be positioned on top of other elements.</p> 
+  <h1 class="title">Absolute Position</h1>  
+  <div class="parent">
+      <div class="static-block">Block 1</div>
+      <div class="absolute-block">ABSOLUTE</div>
+      <div class="static-block">Block 3</div>
+      <div class="static-block">Block 4</div>
+  </div> 
+  <p class="explanation">When using absolute position the element is free to be move anywhere. It is not fixed to it's original static position but instead is relative to its parent element with either a fixed or absolute position.</p> 
+  <h1 class="title">Fixed Postion</h1> 
+  <div class="parent">
+      <div class="static-block">Block 1</div>
+      <div class="fixed-block">FIXED</div>
+      <div class="static-block">Block 3</div>
+      <div class="static-block">Block 4</div>
+  </div>    
+  <p class="explanation"> When using fixed position the element is based on the viewport. It is often used for navigation bars or anything that needs to be viewed throughout the viewing experience of the page.</p>  
+  </body>
+</html>
