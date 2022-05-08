@@ -77,27 +77,28 @@ p {
 }
 .blog-info {
   display: grid;
-  grid-template-columns: 50px 2fr;
-  column-gap: 10px;
+  grid-template-columns: 90px 2fr;
+  column-gap: 20px;
 }
 .text-info {
   margin-top: 0;
 }
 
 .blog-title {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   margin-top: 0px;
 }
 .blog-date {
-  font-size: 12px;
+  font-size: 16px;
   color: gray;
   margin-top: 0px;
 }
 .blog-author { 
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 0px;
 }
+
 /*---UNIVERSAL TEXT---*/
 
 h1 {
@@ -108,6 +109,14 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 p { 
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.textbox70{
+  width: 70%;
 }
